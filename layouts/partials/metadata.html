@@ -1,6 +1,6 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
-<div class="flex flex-row gap-2 mb-2">
+<div class="flex flex-row gap-2 ">
 {{ if .PublishDate }}
 <div>
 	<datetime class="text-zinc-500">{{ .PublishDate.Format $dateFormat }}</datetime></div>
